@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { FeaturesContainer } from '../common';
+import { FeatureHeaderText, FeaturesContainer } from '../common';
 
 export const Container = styled(FeaturesContainer)`
   display: flex;
@@ -17,4 +17,37 @@ export const Container = styled(FeaturesContainer)`
 
     line-height: 24px;
   }
+
+  .read-docs {
+    width: 90%;
+    padding: 1rem;
+    color: #ffffff;
+    border-radius: 8px;
+    background: #2375ef;
+
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+
+    p {
+    }
+
+    span {
+      img {
+        margin-top: 8.8px;
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+`;
+
+export const HeaderText = styled(FeatureHeaderText)`
+  padding: 0.8rem 1.2rem;
 `;

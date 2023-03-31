@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <Styled.Container>
       <Styled.CLabs>
-        <p>[TBD]</p>
+        <img src='/logo.svg' alt='CLABS LOGO' />
         <div>
           <img src='/clabs-logo.svg' alt='CLABS LOGO' />
           <p>

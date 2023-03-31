@@ -3,9 +3,11 @@ import * as Styled from './styles';
 const HeroSection = () => {
   return (
     <Styled.HeroSection>
-      <h2>Decentralized user logins with a familiar and simple interface</h2>
+      <h2>
+        Merging Web2 to Web3 user logins with a familiar and simple interface
+      </h2>
       <p>
-        Onboard users to Web3 with traditional social logins,{' '}
+        Blockchain transactions with existing traditional social logins,{' '}
         <span className='init-span'>
           like <span>Discord</span>
         </span>

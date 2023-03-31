@@ -5,7 +5,9 @@ import Security from '../components/Security';
 import { DemoGif } from '../components/common';
 import WhyOthent from '../components/WhyOthent';
 import HowItWorks from '../components/HowItWorks';
+import SDKSection from '../components/SDKSection';
 import HeroSection from '../components/HeroSection';
+import CallToAction from '../components/CallToAction';
 
 export default function Home() {
   return (
@@ -20,10 +22,20 @@ export default function Home() {
         <DemoGif>
           <img src='/demo.svg' alt='demo-gif' />
         </DemoGif>
-        <Features />
+        <Features
+          type='mission'
+          textSmall='Our mission is to'
+          headerText='Empower 5 Billion Web2 users with a robust gateway to Web3'
+        />
+        {/* TODO: WEAVE TRANSFER SECTION */}
+        <Features
+          type='simplicity'
+          textSmall='Ease matters to us'
+          headerText="Simplicity is key, keys aren't simplicity"
+        />
         <HowItWorks />
-        <Security />
-        <WhyOthent />
+        <SDKSection />
+        <CallToAction />
       </main>
 
       <Footer />

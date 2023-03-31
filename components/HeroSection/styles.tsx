@@ -1,27 +1,24 @@
 import styled from 'styled-components';
 
 export const HeroSection = styled.div`
-  /* background: orange; */
   display: flex;
   align-items: center;
   flex-direction: column;
 
   h2 {
-    /* margin: 0; */
-    margin-bottom: 0.5rem;
-    font-weight: 700;
-    font-size: 2rem;
     padding: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
     line-height: 40px;
+    margin-bottom: 0.5rem;
     letter-spacing: 0.02em;
   }
 
   p {
-    /* background: purple; */
     margin-top: 0;
-    padding: 0rem 1rem;
+    padding: 0rem 3rem 0rem 1rem;
     font-weight: 630;
-    font-size: 21px;
+    font-size: 20px;
     color: #4a505a;
     margin-bottom: 2rem;
   }

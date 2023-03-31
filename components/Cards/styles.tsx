@@ -5,16 +5,16 @@ interface ContainerProps {
 }
 
 export const Container = styled.div<ContainerProps>`
-  margin: 1rem;
+  margin: 1.2rem;
   margin-bottom: 1.6rem;
   border-radius: 26px;
 
   display: flex;
-
   flex-direction: column;
   border: 1px solid #d3e3fc;
 
   img {
+    padding: 2rem;
     width: 100%;
     height: 200px;
     border-top-left-radius: 24px;
@@ -29,13 +29,13 @@ export const Container = styled.div<ContainerProps>`
 
 export const Title = styled.p`
   margin: 0;
+  padding: 0 2rem;
   margin-bottom: 0.7rem;
+
   color: #2375ef;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-
-  padding: 0 2rem;
 `;
 
 export const Text = styled.p`
@@ -46,6 +46,8 @@ export const Text = styled.p`
   line-height: 24px;
 
   padding: 0 2rem;
+
+  color: #4a505a;
 `;
 
 export const SlideCardContainer = styled.div`
@@ -105,7 +107,7 @@ export const SlideCardContainer = styled.div`
       color: #7d8795;
       font-weight: 500;
       font-size: 1rem;
-      line-height: 24px;
+      /* line-height: 24px; */
     }
   }
 `;

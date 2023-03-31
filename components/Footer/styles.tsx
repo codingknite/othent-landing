@@ -75,4 +75,12 @@ export const FooterItems = styled.div`
       margin-bottom: 1rem;
     }
   }
+
+  .socials {
+    li {
+      gap: 0.5rem;
+      display: flex;
+      align-items: center;
+    }
+  }
 `;

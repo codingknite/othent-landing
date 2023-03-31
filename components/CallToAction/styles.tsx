@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { FeaturesContainer, FeatureHeaderText } from '../common';
+import { FeaturesContainer, FeatureHeaderText, LinkButton } from '../common';
 
 export const Container = styled(FeaturesContainer)`
   margin-bottom: 3.5rem;
@@ -27,17 +27,10 @@ export const Container = styled(FeaturesContainer)`
       line-height: 24px;
       background: #2375ef;
     }
+  }
 
-    &.secondary-btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      gap: 0.7rem;
-      color: #5865f2;
-      background: none;
-      border: 2px solid #5865f2;
-    }
+  .mailbox {
+    width: 100%;
   }
 
   .test {
@@ -78,4 +71,17 @@ export const Container = styled(FeaturesContainer)`
 export const HeaderText = styled(FeatureHeaderText)`
   padding: 0.8rem 1.5rem;
   margin-bottom: 1rem;
+`;
+
+export const JoinDiscord = styled(LinkButton)`
+  margin: 0;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.7rem;
+  color: #5865f2;
+  background: none;
+  border: 2px solid #5865f2;
 `;

@@ -107,7 +107,7 @@ export const SlideCardContainer = styled.div`
       color: #7d8795;
       font-weight: 500;
       font-size: 1rem;
-      /* line-height: 24px; */
+      line-height: 24px;
     }
   }
 `;

@@ -57,4 +57,28 @@ export const FeatureHeaderText = styled.p`
 `;
 
 // TODO
-export const Button = styled.button``;
+export const LinkButton = styled.a`
+  padding: 12px 1rem;
+  color: #ffffff;
+  border-radius: 8px;
+  background: #2375ef;
+
+  margin: 1.5rem 0;
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+
+  span {
+    img {
+      margin-top: 8.8px;
+      width: 15px;
+      height: 15px;
+    }
+  }
+`;

@@ -1,5 +1,5 @@
 import * as Styled from './styles';
-import { FeatureHeaderText } from '../common';
+import { FeatureHeaderText, LinkButton } from '../common';
 
 const CallToAction = () => {
   return (
@@ -8,12 +8,12 @@ const CallToAction = () => {
         Start onboarding your users from web2 to web3
       </Styled.HeaderText>
       <button className='primary-btn'>Get Started</button>
-      <button className='secondary-btn'>
+      <Styled.JoinDiscord>
         <img src='/discord-colored.svg' alt='discord logo' />
         Join Discord
-      </button>
+      </Styled.JoinDiscord>
 
-      <img src='/backdrop.svg' alt='mailbox' />
+      <img src='/backdrop.svg' alt='mailbox' className='mailbox' />
 
       <FeatureHeaderText className='test'>Stay up to date</FeatureHeaderText>
       <p className='mailbox-info'>

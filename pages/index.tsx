@@ -1,9 +1,7 @@
 import Head from 'next/head';
 import Footer from '../components/Footer';
 import Features from '../components/Features';
-import Security from '../components/Security';
 import { DemoGif } from '../components/common';
-import WhyOthent from '../components/WhyOthent';
 import HowItWorks from '../components/HowItWorks';
 import SDKSection from '../components/SDKSection';
 import HeroSection from '../components/HeroSection';

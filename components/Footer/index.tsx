@@ -31,21 +31,21 @@ const Footer = () => {
           <p>Legal</p>
           <li>Terms of Service</li>
           <li>All rights reserved</li>
-          <li>Copyright @ 2022</li>
+          <li>Copyright © 2022</li>
         </ul>
 
-        <ul>
+        <ul className='socials'>
           <p>Follow us</p>
           <li>
-            <img src='' alt='' />
+            <img src='/discord-gray.svg' alt='discord icon' />
             Discord
           </li>
           <li>
-            <img src='' alt='' />
+            <img src='/github-icon.svg' alt='github icon' />
             Github
           </li>
           <li>
-            <img src='' alt='' />
+            <img src='/twitter-icon.svg' alt='twitter icon' />
             Twitter
           </li>
         </ul>

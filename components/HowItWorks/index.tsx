@@ -1,5 +1,5 @@
 import * as Styled from './styles';
-import { FeatureTextSmall } from '../common';
+import { FeatureTextSmall, LinkButton } from '../common';
 
 const HowItWorks = () => {
   return (

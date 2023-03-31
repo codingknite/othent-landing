@@ -20,7 +20,7 @@ export const Container = styled(FeaturesContainer)`
 
   .read-docs {
     width: 90%;
-    padding: 1rem;
+    padding: 12px 1rem;
     color: #ffffff;
     border-radius: 8px;
     background: #2375ef;
@@ -49,5 +49,6 @@ export const Container = styled(FeaturesContainer)`
 `;
 
 export const HeaderText = styled(FeatureHeaderText)`
+  margin-bottom: 1rem;
   padding: 0.8rem 1.2rem;
 `;

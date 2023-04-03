@@ -63,13 +63,13 @@ export const Onboard = styled.div`
     margin: 0.5rem 0;
     font-weight: 700;
     line-height: 32px;
+    margin-bottom: 1.5rem;
   }
 `;
 
 export const IconsContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
-  margin-top: 1.5rem;
   width: 100%;
   gap: 3rem;
 

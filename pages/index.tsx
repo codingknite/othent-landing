@@ -18,7 +18,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <DemoGif>
-          <img src='/demo.svg' alt='demo-gif' />
+          <img src='/demo-gif.gif' alt='demo-gif' />
         </DemoGif>
         <Features
           type='mission'

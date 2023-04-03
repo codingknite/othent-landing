@@ -95,7 +95,6 @@ export const SlideCardContainer = styled.div`
 
     h3 {
       margin-top: 0.35rem;
-
       color: #2375ef;
       font-weight: 650;
       font-size: 24px;

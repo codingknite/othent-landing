@@ -1,54 +1,41 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-const Container = styled.div`
-  padding: 0 0.5rem;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  min-height: 100vh;
-`
-const Main = styled.main`
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`
+export const LandingPageContainer = styled.main``;
 
-const Title = styled.h1`
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-  text-align: center;
-  text-decoration: none;
-
-  a {
-    color: ${({ theme }) => theme.colors.secondary};
-    text-decoration: none;
-    &:hover,
-    :focus,
-    :active {
-      text-decoration: underline;
-    }
+export const SectionTwo = styled.div`
+  @media (min-width: 1024px) {
+    background-image: url('/bkg-circles.svg'), url('bkg-squares.svg');
+    background-size: 55% 90%, 60% 50%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: -60% 160%, 160% 50%;
   }
-`
+`;
 
-const Description = styled.p`
-  text-align: center;
-  line-height: 1.5;
-  font-size: 1.5rem;
-`
-const CodeTag = styled.code`
-  background: #fafafa;
-  border-radius: 5px;
-  margin: 0 0.75rem;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-`
+export const SectionThree = styled.div`
+  @media (min-width: 1024px) {
+    background-image: url('/bkg-squares.svg'), url('bkg-circles.svg'),
+      url('bkg-squares.svg'), url('bkg-lines.svg');
+    background-size: 60% 50%, 60% 80%, 60% 50%, 60% 50%;
+    background-repeat: no-repeat, repeat-y, no-repeat, no-repeat;
+    background-position: -60% 50%, -60% -10%, 160% 50%, 160% 50%;
+  }
+`;
 
-export { Container, Main, Title, Description, CodeTag }
+export const SectionFour = styled.div`
+  @media (min-width: 1024px) {
+    background-image: url('/bkg-circles.svg'), url('bkg-circles.svg'),
+      url('bkg-squares.svg');
+    background-size: 60% 150%, 70% 70%, 60% 40%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: -55% 80%, 180% 20%, 160% 10%;
+  }
+`;
+
+export const SectionOne = styled.div`
+  @media (min-width: 1024px) {
+    background-image: url('/bkg-squares.svg'), url('bkg-lines.svg');
+    background-size: 35% 55%, 28.5% 48.5%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: -20% 150%, 109% 144.5%;
+  }
+`;

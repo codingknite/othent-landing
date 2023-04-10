@@ -1,15 +1,16 @@
 import * as Styled from './styles';
+import { SpaceGrotesk700, DMSans700 } from '../../utils/fonts';
 
 const HeroSection = () => {
   return (
     <Styled.HeroSection>
-      <h2>
+      <h2 className={SpaceGrotesk700.className}>
         Merging Web2 to Web3 user logins with a familiar and simple interface
       </h2>
 
-      <div className='tagline'>
+      <Styled.Tagline className={DMSans700.className}>
         Blockchain transactions with existing traditional social logins,{' '}
-        <Styled.Socials>
+        <Styled.SocialLogins>
           like{' '}
           <div className='items-container'>
             <span className='discord'>Discord</span>
@@ -39,11 +40,15 @@ const HeroSection = () => {
             <span className='amazon'>Amazon</span>
             <span className='twitter'>Twitter</span>
           </div>
-        </Styled.Socials>
-      </div>
+        </Styled.SocialLogins>
+      </Styled.Tagline>
 
-      <button className='get-started'>Get Started</button>
-      <button className='demo'>Demo</button>
+      <Styled.ButtonsWrapper>
+        <Styled.Button getStarted className={DMSans700.className}>
+          Get Started
+        </Styled.Button>
+        <Styled.Button className={DMSans700.className}>Demo</Styled.Button>
+      </Styled.ButtonsWrapper>
     </Styled.HeroSection>
   );
 };

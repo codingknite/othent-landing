@@ -4,6 +4,8 @@ import {
   FeaturesContainer,
   FeatureTextSmall,
 } from '../common';
+import * as Styled from './styles';
+import { DMSans700, SpaceGrotesk700 } from '../../utils/fonts';
 
 interface Props {
   type: 'mission' | 'simplicity';
@@ -13,12 +15,16 @@ interface Props {
 
 const Features = (props: Props) => {
   return (
-    <FeaturesContainer>
-      <FeatureTextSmall>{props.textSmall}</FeatureTextSmall>
-      <FeatureHeaderText>{props.headerText}</FeatureHeaderText>
+    <FeaturesContainer mission>
+      <FeatureTextSmall className={DMSans700.className}>
+        {props.textSmall}
+      </FeatureTextSmall>
+      <FeatureHeaderText className={SpaceGrotesk700.className}>
+        {props.headerText}
+      </FeatureHeaderText>
 
       {props.type === 'mission' ? (
-        <div>
+        <Styled.CardsContainer>
           <FeatureCard
             title='Onboard the masses'
             text='Othent allows web3 dApps and protocols to seamlessly access web2 users.'
@@ -34,12 +40,12 @@ const Features = (props: Props) => {
             text='Our web2 backed protocol is able to reach a wider audience and scale more effectively.'
             imgsrc='/globe.svg'
           />
-        </div>
+        </Styled.CardsContainer>
       ) : (
-        <div>
+        <Styled.CardsContainer>
           <FeatureCard
             title='Smart contract wallets'
-            text='Othent uses JSON Web Tokens paired with smart contracts, <span>no need for private keys.</span>'
+            text='Othent uses JSON Web Tokens paired with smart contracts, no need for private keys.'
             imgsrc='/files.svg'
           />
           <FeatureCard
@@ -52,7 +58,7 @@ const Features = (props: Props) => {
             text='Add an extra layer of security through a second form of authentication.'
             imgsrc='/2fa.svg'
           />
-        </div>
+        </Styled.CardsContainer>
       )}
     </FeaturesContainer>
   );

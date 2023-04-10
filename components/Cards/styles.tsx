@@ -5,25 +5,37 @@ interface ContainerProps {
 }
 
 export const Container = styled.div<ContainerProps>`
-  margin: 1.2rem;
-  margin-bottom: 1.6rem;
   border-radius: 26px;
 
   display: flex;
+  margin: 0 1.3rem;
   flex-direction: column;
   border: 1px solid #d3e3fc;
+  background: #f2f2f2;
+  background: #f2f2f2;
 
   img {
-    padding: 2rem;
     width: 100%;
+    padding: 2rem;
     height: 200px;
+    margin-bottom: 2rem;
+    background: #d3e3fc;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
-    background: #d3e3fc;
+  }
 
-    margin-bottom: 2rem;
+  @media (min-width: 550px) {
+    width: 42%;
+  }
 
-    padding: ${(props) => (props.img === '/auth.svg' ? '2.3rem' : '')};
+  @media (min-width: 1024px) {
+    margin: 0;
+    width: 45%;
+
+    img {
+      height: 150px;
+      margin-bottom: 1rem;
+    }
   }
 `;
 
@@ -33,21 +45,28 @@ export const Title = styled.p`
   margin-bottom: 0.7rem;
 
   color: #2375ef;
-  font-weight: 700;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 24px;
+
+  @media (min-width: 1024px) {
+    font-size: 1rem;
+  }
 `;
 
 export const Text = styled.p`
   margin: 0;
   margin-bottom: 2rem;
-  font-weight: 600;
   font-size: 1rem;
   line-height: 24px;
 
   padding: 0 2rem;
 
   color: #4a505a;
+
+  @media (min-width: 1024px) {
+    font-size: 0.875rem;
+    line-height: 18px;
+  }
 `;
 
 export const SlideCardContainer = styled.div`
@@ -82,8 +101,7 @@ export const SlideCardContainer = styled.div`
       align-items: center;
       justify-content: center;
 
-      font-weight: 700;
-      font-size: 20px;
+      font-size: 1.25rem;
       line-height: 20px;
     }
   }
@@ -96,15 +114,13 @@ export const SlideCardContainer = styled.div`
     h3 {
       margin-top: 0.35rem;
       color: #2375ef;
-      font-weight: 650;
-      font-size: 24px;
+      font-size: 1.5rem;
       line-height: 32px;
     }
 
     p {
       margin-top: 0.5rem;
       color: #7d8795;
-      font-weight: 500;
       font-size: 1rem;
       line-height: 24px;
     }

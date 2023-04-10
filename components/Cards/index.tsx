@@ -1,4 +1,5 @@
 import * as Styled from './styles';
+import { SpaceGrotesk700, DMSans700 } from '../../utils/fonts';
 
 interface FeatureCardProps {
   text: string;
@@ -17,8 +18,10 @@ export const FeatureCard = (props: FeatureCardProps) => {
     <Styled.Container img={props.imgsrc}>
       <img src={props.imgsrc} alt='illustration' />
 
-      <Styled.Title>{props.title}</Styled.Title>
-      <Styled.Text>{props.text}</Styled.Text>
+      <Styled.Title className={SpaceGrotesk700.className}>
+        {props.title}
+      </Styled.Title>
+      <Styled.Text className={DMSans700.className}>{props.text}</Styled.Text>
     </Styled.Container>
   );
 };

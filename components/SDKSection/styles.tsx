@@ -1,46 +1,13 @@
 import styled from 'styled-components';
-import { FeatureHeaderText, FeaturesContainer, LinkButton } from '../common';
+import { FeaturesContainer, LinkButton } from '../common';
 
-export const container = styled(FeaturesContainer)`
+export const MainContainer = styled(FeaturesContainer)`
   display: flex;
   align-items: center;
   flex-direction: column;
-
-  .read-docs {
-    padding: 12px 1rem;
-    color: #ffffff;
-    border-radius: 8px;
-    background: #2375ef;
-
-    margin: 1.5rem 0;
-    gap: 0.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    text-align: center;
-
-    p {
-    }
-
-    span {
-      img {
-        margin-top: 8.8px;
-        width: 15px;
-        height: 15px;
-      }
-    }
-  }
-
-  .code-snippet {
-    width: 100%;
-  }
 `;
 
-export const Onboard = styled.div`
+export const OnboardContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -49,56 +16,147 @@ export const Onboard = styled.div`
   padding: 1.2rem;
   border-radius: 16px;
   border: 1px solid #d3e3fc;
+  background: #f2f2f2;
 
-  .try-out {
-    font-size: 20px;
-    color: #2375ef;
-    font-weight: 700;
-    line-height: 24px;
-    margin-bottom: 0.25rem;
+  @media (min-width: 550px) {
+    gap: 2rem;
+    width: 90%;
+    padding: 1.5rem;
+    flex-direction: row;
+    justify-content: center;
   }
 
-  .onboard-users {
-    font-size: 24px;
-    margin: 0.5rem 0;
-    font-weight: 700;
-    line-height: 32px;
-    margin-bottom: 1.5rem;
+  @media (min-width: 1024px) {
+    gap: 3.5rem;
+    width: 70%;
+    padding: 3rem 1.5rem;
+  }
+
+  @media (min-width: 1100px) {
+    width: 55%;
+    padding: 3rem 1.5rem;
+  }
+`;
+
+export const Onboard = styled.div`
+  @media (min-width: 550px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
+export const TextOne = styled.p`
+  font-size: 1.125rem;
+  color: #2375ef;
+  line-height: 24px;
+  text-align: center;
+
+  @media (min-width: 550px) {
+    font-size: 1rem;
+  }
+`;
+export const TextTwo = styled.p`
+  font-size: 1.25rem;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+
+  @media (min-width: 550px) {
+    font-size: 1.125rem;
+    text-align: center;
   }
 `;
 
 export const IconsContainer = styled.div`
-  display: flex;
-  justify-content: space-evenly;
+  gap: 1rem;
   width: 100%;
-  gap: 3rem;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: 550px) {
+    gap: 1rem;
+  }
 
   div {
     display: flex;
     align-items: center;
     flex-direction: column;
 
+    @media (min-width: 550px) {
+      margin-bottom: 1rem;
+    }
+
     img {
-      width: 45px;
-      height: 45px;
+      width: 42px;
+      height: 42px;
 
       background: #d3e3fc;
       border-radius: 8px;
       padding: 0.7rem;
+
+      @media (min-width: 550px) {
+        width: 38px;
+        height: 38px;
+      }
     }
 
     p {
-      font-size: 20px;
-      font-weight: 700;
+      font-size: 0.875rem;
+      margin: 0.1rem 0;
       line-height: 24px;
-      margin-top: 0.5rem;
     }
   }
 `;
 
-export const HeaderText = styled(FeatureHeaderText)`
-  margin-bottom: 0.5rem;
-  padding: 0.5rem 2.5rem;
+export const Button = styled.button`
+  border: none;
+  cursor: pointer;
+  padding: 12px 1rem;
+  color: #ffffff;
+  border-radius: 8px;
+  background: #2375ef;
+
+  margin: 1.5rem 0;
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1rem;
+  line-height: 24px;
+  text-align: center;
+
+  span {
+    img {
+      margin-top: 8.8px;
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  @media (min-width: 550px) {
+    margin: auto;
+    font-size: 0.875rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 5px 1rem;
+  }
 `;
 
-export const Button = styled(LinkButton)``;
+export const CodeSnippet = styled.img`
+  width: 100%;
+
+  @media (min-width: 550px) {
+    width: 85%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 50%;
+  }
+`;

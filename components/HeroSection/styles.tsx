@@ -5,53 +5,35 @@ export const HeroSection = styled.div`
   align-items: center;
   flex-direction: column;
 
+  @media (min-width: 550px) {
+    width: 65%;
+  }
+
+  @media (min-width: 1100px) {
+    width: 50%;
+  }
+
   h2 {
-    padding: 1rem;
+    padding: 1.5rem;
     font-size: 2rem;
-    font-weight: 700;
     line-height: 40px;
     margin-bottom: 0.5rem;
     letter-spacing: 0.02em;
+
+    @media (min-width: 550px) {
+      min-width: 90%;
+      max-width: 92%;
+      padding: 0rem 1.5rem;
+      font-size: 2.3rem;
+      align-self: flex-start;
+    }
+
+    @media (min-width: 1100px) {
+      font-size: 2.5rem;
+      width: 100%;
+    }
   }
 
-  p {
-    margin-top: 0;
-    padding: 0rem 3rem 0rem 1rem;
-    font-weight: 630;
-    font-size: 20px;
-    color: #4a505a;
-    margin-bottom: 2rem;
-  }
-
-  .tagline {
-    font-weight: 630;
-    font-size: 20px;
-    color: #4a505a;
-    padding: 0rem 3rem 0rem 1rem;
-    margin-bottom: 1rem;
-  }
-
-  button {
-    width: 90%;
-    border: none;
-    border-radius: 8px;
-    padding: 1.1rem;
-    margin-bottom: 1rem;
-
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 700;
-  }
-
-  .get-started {
-    background: #2375ef;
-  }
-
-  .demo {
-    color: #2375ef;
-    background: none;
-    border: 1.2px solid #2375ef;
-  }
   @keyframes spin_words {
     0% {
       transform: translateY(-12%);
@@ -164,11 +146,33 @@ export const HeroSection = styled.div`
   }
 `;
 
-export const Socials = styled.div`
+export const Tagline = styled.div`
+  font-size: 1.25rem;
+  color: #4a505a;
+  padding: 0rem 3rem 0rem 1.5rem;
+  margin-bottom: 1rem;
+
+  @media (min-width: 550px) {
+    margin: 0;
+    margin-top: 0.5rem;
+  }
+
+  @media (min-width: 1100px) {
+    width: 75%;
+    font-size: 1rem;
+    align-self: flex-start;
+  }
+`;
+
+export const SocialLogins = styled.div`
   box-sizing: content-box;
   height: 26px;
   display: flex;
   gap: 0.5rem;
+
+  @media (min-width: 550px) {
+    display: inline-flex;
+  }
 
   .items-container {
     overflow: hidden;
@@ -182,14 +186,19 @@ export const Socials = styled.div`
 
   .special {
     img {
-      height: 26px;
+      height: 24px;
+    }
+
+    @media (min-width: 1024px) {
+      img {
+        height: 19px;
+      }
     }
   }
 
   .discord {
     color: #5865f2;
   }
-
   .dribble {
     color: #e84c88;
   }
@@ -233,3 +242,51 @@ export const Socials = styled.div`
     color: #1da1f2;
   }
 `;
+
+export const ButtonsWrapper = styled.div`
+  width: 100%;
+  margin-top: 1rem;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @media (min-width: 550px) {
+    gap: 1rem;
+    flex-direction: row;
+  }
+`;
+
+export const Button = styled.button<ButtonProps>`
+  width: 90%;
+  border: none;
+  cursor: pointer;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: ${(props) => (props.getStarted ? 'none' : '1.2px solid #2375ef')};
+
+  font-size: 1rem;
+
+  color: ${(props) => (props.getStarted ? '#fff' : '#2375ef')};
+  background: ${(props) => (props.getStarted ? '#2375ef' : '#f2f2f2')};
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  @media (min-width: 550px) {
+    width: ${(props) => (props.getStarted ? '30%' : '20%')};
+    padding: 12px 1rem;
+    font-size: 0.875rem;
+    margin-left: 1rem;
+  }
+
+  @media (min-width: 1024px) {
+    width: ${(props) => (props.getStarted ? '20%' : '13%')};
+  }
+`;
+
+interface ButtonProps {
+  getStarted?: boolean;
+}

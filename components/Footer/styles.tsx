@@ -40,7 +40,6 @@ export const CLabs = styled.div`
     margin-bottom: 1rem;
 
     @media (min-width: 550px) {
-      font-size: 0.8125rem;
       margin-bottom: 0;
     }
   }
@@ -99,16 +98,6 @@ export const FooterItems = styled.div`
 
       color: #7d8795;
       margin-bottom: 1rem;
-    }
-
-    @media (min-width: 550px) {
-      p {
-        font-size: 0.875rem;
-      }
-
-      li {
-        font-size: 0.75rem;
-      }
     }
   }
 `;

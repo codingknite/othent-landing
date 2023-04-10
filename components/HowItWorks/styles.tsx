@@ -24,7 +24,7 @@ export const Container = styled(FeaturesContainer)`
     }
 
     @media (min-width: 1100px) {
-      width: 75%;
+      width: 70%;
     }
   }
 
@@ -94,8 +94,7 @@ export const ReadDocs = styled.a`
   }
 
   @media (min-width: 1100px) {
-    font-size: 0.875rem;
     width: 12%;
-    padding: 5px 1rem;
+    padding: 10px 1rem;
   }
 `;

@@ -280,7 +280,7 @@ export const Button = styled.button<ButtonProps>`
   }
 
   @media (min-width: 1024px) {
-    padding: 8px 16px;
+    padding: 12px 16px;
   }
 `;
 
@@ -428,7 +428,7 @@ export const WTLink = styled.a`
 
   @media (min-width: 1100px) {
     width: 85%;
-    padding: 12px 1rem;
+    padding: 14px 1rem;
 
     span {
       img {
@@ -522,7 +522,6 @@ export const UploadModalContainer = styled.div`
       p {
         font-size: 0.875rem;
         text-align: center;
-        background: orangered;
       }
     }
   }

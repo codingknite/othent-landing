@@ -88,8 +88,8 @@ export const IconsContainer = styled.div`
     }
 
     img {
-      width: 42px;
-      height: 42px;
+      width: 45px;
+      height: 45px;
 
       background: #d3e3fc;
       border-radius: 8px;
@@ -102,7 +102,7 @@ export const IconsContainer = styled.div`
     }
 
     p {
-      font-size: 0.875rem;
+      font-size: 15px;
       margin: 0.1rem 0;
       line-height: 24px;
     }
@@ -141,7 +141,6 @@ export const Button = styled.button`
 
   @media (min-width: 550px) {
     margin: auto;
-    font-size: 0.875rem;
   }
 
   @media (min-width: 1024px) {

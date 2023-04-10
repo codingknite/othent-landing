@@ -1,4 +1,5 @@
-import { FeatureCard } from '../Cards/';
+import FeatureCard from '../Cards/FeatureCard';
+
 import {
   FeatureHeaderText,
   FeaturesContainer,

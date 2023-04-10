@@ -4,21 +4,17 @@ export const CardsContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  /* gap: 1.5rem;
-  padding: 2rem; */
 
   @media (min-width: 550px) {
-    flex-wrap: wrap;
-    flex-direction: row;
+    margin-top: 1.5rem;
   }
 
   @media (min-width: 1024px) {
-    width: 90%;
-    margin: auto;
-    flex-wrap: nowrap;
-  }
+    gap: 2rem;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
 
-  @media (min-width: 1100px) {
-    width: 70%;
+    margin-top: 2rem;
   }
 `;

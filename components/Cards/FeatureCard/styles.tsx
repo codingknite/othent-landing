@@ -6,6 +6,7 @@ interface ContainerProps {
 
 export const Container = styled.div<ContainerProps>`
   width: 85%;
+  height: 400px;
   display: flex;
   flex-direction: column;
 
@@ -13,6 +14,14 @@ export const Container = styled.div<ContainerProps>`
   background: #f2f2f2;
   margin-bottom: 1.5rem;
   border: 1px solid #d3e3fc;
+
+  @media (min-width: 550px) {
+    width: 373.33px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 300px;
+  }
 
   div {
     margin-bottom: 2rem;
@@ -25,30 +34,12 @@ export const Container = styled.div<ContainerProps>`
       border-top-left-radius: 24px;
       border-top-right-radius: 24px;
 
-      background: orangered;
+      @media (min-width: 1024px) {
+        height: 180px;
+        margin-bottom: 1rem;
+      }
     }
   }
-
-  /* 
-  margin: 0 1.3rem;
-
-  img {
-    padding: 2rem;
-  }
-
-  @media (min-width: 550px) {
-    width: 42%;
-  }
-
-  @media (min-width: 1024px) {
-    margin: 0;
-    width: 45%;
-
-    img {
-      height: 150px;
-      margin-bottom: 1rem;
-    }
-  } */
 `;
 
 export const Title = styled.p`
@@ -58,18 +49,6 @@ export const Title = styled.p`
 
   padding: 0 2rem;
   margin-bottom: 0.7rem;
-
-  /* margin: 0;
-  padding: 0 2rem;
-  margin-bottom: 0.7rem;
-
-  color: #2375ef;
-  font-size: 1.25rem;
-  line-height: 24px;
-
-  @media (min-width: 1024px) {
-    font-size: 1rem;
-  } */
 `;
 
 export const Text = styled.p`
@@ -79,18 +58,4 @@ export const Text = styled.p`
   color: #4a505a;
   padding: 0rem 2rem;
   margin-bottom: 2rem;
-
-  /* margin: 0;
-  margin-bottom: 2rem;
-  font-size: 1rem;
-  line-height: 24px;
-
-  padding: 0 2rem;
-
-  color: #4a505a;
-
-  @media (min-width: 1024px) {
-    font-size: 0.875rem;
-    line-height: 18px;
-  } */
 `;

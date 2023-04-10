@@ -2,9 +2,10 @@ import styled from 'styled-components';
 
 export const CardsContainer = styled.div`
   display: flex;
+  align-items: center;
   flex-direction: column;
-  gap: 1.5rem;
-  padding: 2rem;
+  /* gap: 1.5rem;
+  padding: 2rem; */
 
   @media (min-width: 550px) {
     flex-wrap: wrap;

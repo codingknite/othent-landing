@@ -5,22 +5,35 @@ interface ContainerProps {
 }
 
 export const Container = styled.div<ContainerProps>`
-  border-radius: 26px;
-
+  width: 85%;
   display: flex;
-  margin: 0 1.3rem;
   flex-direction: column;
-  border: 1px solid #d3e3fc;
+
+  border-radius: 26px;
   background: #f2f2f2;
+  margin-bottom: 1.5rem;
+  border: 1px solid #d3e3fc;
+
+  div {
+    margin-bottom: 2rem;
+
+    img {
+      width: 100%;
+      padding: 2rem;
+      height: 200px;
+      background: #d3e3fc;
+      border-top-left-radius: 24px;
+      border-top-right-radius: 24px;
+
+      background: orangered;
+    }
+  }
+
+  /* 
+  margin: 0 1.3rem;
 
   img {
-    width: 100%;
     padding: 2rem;
-    height: 200px;
-    margin-bottom: 2rem;
-    background: #d3e3fc;
-    border-top-left-radius: 24px;
-    border-top-right-radius: 24px;
   }
 
   @media (min-width: 550px) {
@@ -35,11 +48,18 @@ export const Container = styled.div<ContainerProps>`
       height: 150px;
       margin-bottom: 1rem;
     }
-  }
+  } */
 `;
 
 export const Title = styled.p`
-  margin: 0;
+  color: #2375ef;
+  line-height: 24px;
+  font-size: 1.25rem;
+
+  padding: 0 2rem;
+  margin-bottom: 0.7rem;
+
+  /* margin: 0;
   padding: 0 2rem;
   margin-bottom: 0.7rem;
 
@@ -49,11 +69,18 @@ export const Title = styled.p`
 
   @media (min-width: 1024px) {
     font-size: 1rem;
-  }
+  } */
 `;
 
 export const Text = styled.p`
-  margin: 0;
+  font-size: 1rem;
+  line-height: 24px;
+
+  color: #4a505a;
+  padding: 0rem 2rem;
+  margin-bottom: 2rem;
+
+  /* margin: 0;
   margin-bottom: 2rem;
   font-size: 1rem;
   line-height: 24px;
@@ -65,5 +92,5 @@ export const Text = styled.p`
   @media (min-width: 1024px) {
     font-size: 0.875rem;
     line-height: 18px;
-  }
+  } */
 `;

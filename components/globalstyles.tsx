@@ -10,11 +10,11 @@ const GlobalStyle = createGlobalStyle`
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
-    @media (min-width: 1500px) {
+    /* @media (min-width: 1500px) {
       width: 1500px;
       margin: auto;
 
-    }
+    } */
   }
 
   a {

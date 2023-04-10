@@ -15,6 +15,6 @@ export const CardsContainer = styled.div`
     flex-direction: row;
     justify-content: center;
 
-    margin-top: 2rem;
+    margin-top: 2.5rem;
   }
 `;

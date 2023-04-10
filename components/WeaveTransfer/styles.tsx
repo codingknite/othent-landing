@@ -49,7 +49,6 @@ export const WTContainer = styled.div`
   border-radius: 1rem;
   border: 1px solid #d3e3fc;
   background: #f2f2f2;
-  background: #f2f2f2;
 
   display: flex;
   align-items: center;
@@ -82,15 +81,12 @@ export const WTContainer = styled.div`
     margin-top: 1rem;
     text-align: center;
 
+    color: #4a505a;
     font-size: 1rem;
     line-height: 24px;
 
     @media (min-width: 550px) {
       width: 80%;
-    }
-
-    @media (min-width: 1100px) {
-      font-size: 0.875rem;
     }
   }
 
@@ -106,14 +102,9 @@ export const WTContainer = styled.div`
     &::placeholder {
       font-size: 1rem;
       color: #7bacf5;
-
-      @media (min-width: 1100px) {
-        font-size: 0.875rem;
-      }
     }
 
     @media (min-width: 1100px) {
-      font-size: 0.875rem;
       padding: 10px 1rem;
     }
   }
@@ -137,7 +128,6 @@ export const WTContainer = styled.div`
     line-height: 24px;
 
     @media (min-width: 1100px) {
-      font-size: 0.875rem;
       padding: 10px 1rem;
     }
   }
@@ -189,10 +179,6 @@ export const UploadDemo = styled.div<Props>`
     p {
       font-size: 1rem;
       line-height: 24px;
-
-      @media (min-width: 1100px) {
-        font-size: 0.875rem;
-      }
     }
   }
 `;
@@ -220,7 +206,8 @@ export const UploadMenu = styled.div<MenuProps>`
       line-height: 24px;
 
       &.upload-text {
-        font-weight: ${(props) => (props.active === 'upload' ? '700' : '500')} !important;
+        font-weight: ${(props) =>
+          props.active === 'upload' ? '700' : '500'} !important;
 
         color: ${(props) =>
           props.active === 'upload' ? '#2375ef' : '#7D8795;'};
@@ -232,10 +219,6 @@ export const UploadMenu = styled.div<MenuProps>`
 
         color: ${(props) =>
           props.active === 'download' ? '#2375ef' : '#7D8795;'};
-      }
-
-      @media (min-width: 1100px) {
-        font-size: 0.875rem;
       }
     }
   }
@@ -297,7 +280,6 @@ export const Button = styled.button<ButtonProps>`
   }
 
   @media (min-width: 1024px) {
-    font-size: 0.875rem;
     padding: 8px 16px;
   }
 `;
@@ -380,10 +362,6 @@ export const Steps = styled.div`
         span {
           background: none;
         }
-
-        @media (min-width: 1100px) {
-          font-size: 0.875rem;
-        }
       }
 
       .special {
@@ -406,7 +384,6 @@ export const Steps = styled.div`
       p {
         border: none;
         padding: 5px;
-        font-size: 0.875rem;
         margin: 0.2rem 0;
       }
 
@@ -451,7 +428,7 @@ export const WTLink = styled.a`
 
   @media (min-width: 1100px) {
     width: 85%;
-    padding: 7px 1rem;
+    padding: 12px 1rem;
 
     span {
       img {
@@ -543,8 +520,9 @@ export const UploadModalContainer = styled.div`
   .select-upload-container {
     @media (min-width: 1100px) {
       p {
-        font-size: 0.6875rem;
+        font-size: 0.875rem;
         text-align: center;
+        background: orangered;
       }
     }
   }

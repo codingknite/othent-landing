@@ -6,7 +6,7 @@ interface ContainerProps {
 
 export const Container = styled.div<ContainerProps>`
   width: 85%;
-  height: 400px;
+  height: 370px;
   display: flex;
   flex-direction: column;
 
@@ -36,7 +36,6 @@ export const Container = styled.div<ContainerProps>`
 
       @media (min-width: 1024px) {
         height: 180px;
-        margin-bottom: 1rem;
       }
     }
   }
@@ -48,7 +47,7 @@ export const Title = styled.p`
   font-size: 1.25rem;
 
   padding: 0 2rem;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.5rem;
 `;
 
 export const Text = styled.p`

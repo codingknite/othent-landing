@@ -29,8 +29,9 @@ export const HeroSection = styled.div`
     }
 
     @media (min-width: 1100px) {
-      font-size: 2.5rem;
+      font-size: 3rem;
       width: 100%;
+      line-height: 50px;
     }
   }
 
@@ -159,7 +160,8 @@ export const Tagline = styled.div`
 
   @media (min-width: 1100px) {
     width: 75%;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    margin: 1rem 0rem;
     align-self: flex-start;
   }
 `;
@@ -265,7 +267,6 @@ export const Button = styled.button<ButtonProps>`
   border-radius: 8px;
   margin-bottom: 1rem;
   border: ${(props) => (props.getStarted ? 'none' : '1.2px solid #2375ef')};
-
   font-size: 1rem;
 
   color: ${(props) => (props.getStarted ? '#fff' : '#2375ef')};
@@ -278,7 +279,7 @@ export const Button = styled.button<ButtonProps>`
   @media (min-width: 550px) {
     width: ${(props) => (props.getStarted ? '30%' : '20%')};
     padding: 12px 1rem;
-    font-size: 0.875rem;
+    /* font-size: 1rem; */
     margin-left: 1rem;
   }
 

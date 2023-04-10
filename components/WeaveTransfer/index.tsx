@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FeatureTextSmall } from '../common';
+
 import { DMSans700, SpaceGrotesk700, DMSans500 } from '../../utils/fonts';
 import * as Styled from './styles';
 

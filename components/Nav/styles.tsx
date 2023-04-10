@@ -20,9 +20,9 @@ export const NavBar = styled.nav`
     padding: 1.1rem 2rem;
   }
 
-  @media (min-width: 1500px) {
+  /* @media (min-width: 1500px) {
     width: 1500px;
-  }
+  } */
 `;
 
 export const NavLogo = styled.div`
@@ -72,7 +72,7 @@ export const NavLogo = styled.div`
 
 export const NavButton = styled.div`
   a {
-    font-size: 0.875rem;
+    font-size: 1rem;
     margin-right: 1.2rem;
 
     &:hover {
@@ -95,7 +95,7 @@ export const NavButton = styled.div`
     border-radius: 8px;
     background: #2375ef;
 
-    font-size: 0.875rem;
+    font-size: 1rem;
     color: #ffffff;
 
     &:hover {

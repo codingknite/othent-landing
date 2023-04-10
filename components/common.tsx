@@ -11,13 +11,19 @@ export const HeroSectionWrapper = styled.div`
   flex-direction: column;
 
   @media (min-width: 550px) {
+    top: 5rem;
     gap: 1.5rem;
     padding: 1.25rem;
     flex-direction: row;
     align-items: center;
   }
 
+  @media (min-width: 1024px) {
+    height: 80vh;
+  }
+
   @media (min-width: 1100px) {
+    height: 90vh;
     justify-content: space-evenly;
   }
 `;
@@ -34,7 +40,7 @@ export const DemoGif = styled.div`
 
   @media (min-width: 1100px) {
     img {
-      width: 75%;
+      width: 90%;
     }
   }
 `;
@@ -63,7 +69,6 @@ export const FeatureTextSmall = styled.p`
 export const FeatureHeaderText = styled.p`
   margin: 0;
   text-align: center;
-  margin-bottom: 2rem;
   padding: 0.8rem 2.5rem;
 
   font-size: 1.625rem;

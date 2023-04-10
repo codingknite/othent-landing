@@ -12,8 +12,7 @@ export const Container = styled.div<ContainerProps>`
   flex-direction: column;
   border: 1px solid #d3e3fc;
   background: #f2f2f2;
-  background: #f2f2f2;
-
+ 
   img {
     width: 100%;
     padding: 2rem;

@@ -12,7 +12,7 @@ export const Container = styled.div<ContainerProps>`
 
   border-radius: 26px;
   background: #f2f2f2;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.52rem;
   border: 1px solid #d3e3fc;
 
   @media (min-width: 550px) {
@@ -57,4 +57,8 @@ export const Text = styled.p`
   color: #4a505a;
   padding: 0rem 2rem;
   margin-bottom: 2rem;
+
+  span {
+    color: #2375ef;
+  }
 `;

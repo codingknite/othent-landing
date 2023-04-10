@@ -6,6 +6,7 @@ import {
   FeatureTextSmall,
 } from '../common';
 import * as Styled from './styles';
+import * as CardStyled from '../Cards/FeatureCard/styles';
 import { DMSans700, SpaceGrotesk700 } from '../../utils/fonts';
 
 interface Props {
@@ -44,21 +45,47 @@ const Features = (props: Props) => {
         </Styled.CardsContainer>
       ) : (
         <Styled.CardsContainer>
-          <FeatureCard
-            title='Smart contract wallets'
-            text='Othent uses JSON Web Tokens paired with smart contracts, no need for private keys.'
-            imgsrc='/files.svg'
-          />
-          <FeatureCard
-            title='(Anti) social recovery'
-            text='Use our protocol on any device or browser without browser extensions or plugins.'
-            imgsrc='/phone-notif.svg'
-          />
-          <FeatureCard
-            title='Use existing 2FA'
-            text='Add an extra layer of security through a second form of authentication.'
-            imgsrc='/2fa.svg'
-          />
+          <CardStyled.Container img='/files.svg'>
+            <div>
+              <img src='/files.svg' alt='illustration' />
+            </div>
+
+            <CardStyled.Title className={SpaceGrotesk700.className}>
+              Smart contract wallets
+            </CardStyled.Title>
+            <CardStyled.Text className={DMSans700.className}>
+              Othent uses JSON Web Tokens paired with smart contracts,{' '}
+              <span>no need for private keys.</span>
+            </CardStyled.Text>
+          </CardStyled.Container>
+
+          <CardStyled.Container img='/phone-notif.svg'>
+            <div>
+              <img src='/phone-notif.svg' alt='illustration' />
+            </div>
+
+            <CardStyled.Title className={SpaceGrotesk700.className}>
+              (Anti) social recovery
+            </CardStyled.Title>
+            <CardStyled.Text className={DMSans700.className}>
+              Enable <span>recovery of your wallet</span> through social or
+              traditional web3 wallet methods.
+            </CardStyled.Text>
+          </CardStyled.Container>
+
+          <CardStyled.Container img='/2fa.svg'>
+            <div>
+              <img src='/2fa.svg' alt='illustration' />
+            </div>
+
+            <CardStyled.Title className={SpaceGrotesk700.className}>
+              Use existing 2FA
+            </CardStyled.Title>
+            <CardStyled.Text className={DMSans700.className}>
+              Add an <span>extra layer of security</span> through a second form
+              of authentication.
+            </CardStyled.Text>
+          </CardStyled.Container>
         </Styled.CardsContainer>
       )}
     </FeaturesContainer>

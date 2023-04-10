@@ -16,9 +16,9 @@ const Footer = () => {
       <Styled.FooterItems>
         <ul>
           <p>Resources</p>
-          <li>Github</li>
+          <li>SDK</li>
           <li>Documentation</li>
-          <li>Announcements</li>
+          <li>Media Kit</li>
         </ul>
 
         <ul>

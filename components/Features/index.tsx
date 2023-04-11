@@ -17,7 +17,7 @@ interface Props {
 
 const Features = (props: Props) => {
   return (
-    <FeaturesContainer mission>
+    <FeaturesContainer mission={props.type}>
       <FeatureTextSmall className={DMSans700.className}>
         {props.textSmall}
       </FeatureTextSmall>

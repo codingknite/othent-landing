@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 interface FeaturesContainerProps {
-  mission?: boolean;
+  mission?: string;
 }
 
 export const HeroSectionWrapper = styled.div`
@@ -50,12 +50,13 @@ export const FeaturesContainer = styled.section<FeaturesContainerProps>`
     margin: 0;
   }
 
-  margin-top: ${(props) => (props.mission ? '10rem' : '4rem')};
+  margin-top: ${(props) => (props.mission === 'mission' ? '7rem' : '4rem')};
 
   @media (min-width: 1024px) {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: ${(props) => (props.mission === 'mission' ? '10rem' : '4rem')};
   }
 `;
 

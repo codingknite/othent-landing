@@ -23,7 +23,7 @@ export const MainWrapper = styled(FeaturesContainer)`
 `;
 
 export const HeaderText = styled(FeatureHeaderText)`
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
   padding: 0.5rem 2.5rem;
 `;
 

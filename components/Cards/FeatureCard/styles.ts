@@ -12,7 +12,6 @@ export const Container = styled.div<ContainerProps>`
 
   border-radius: 26px;
   background: #f2f2f2;
-  margin-bottom: 1.52rem;
   border: 1px solid #d3e3fc;
 
   @media (min-width: 550px) {
